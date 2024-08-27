@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Fonts -->
+    <!-- Daisy UI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,13 +46,14 @@
         },
       };
     </script>
-    <!-- Custom Style -->
 
     <title>Rinterio</title>
   </head>
-  <body class="font-manrope bg-body">
+  <body class="font-Manrope bg-body">
     <!-- Header Part -->
-    <header class="container mx-auto pt-5 pb-20">
+    <header
+      class="container mx-auto pt-5 lg:pb-20 pb-6 bg-gradient-to-b from-body to-white lg:bg-body"
+    >
       <nav>
         <div class="navbar">
           <div class="flex-1">
@@ -91,7 +93,7 @@
           <div class="ml-3">
             <div class="flex space-x-3 justify-center items-center">
               <div
-                class="h-12 w-12 bg-white border border-accent rounded-full p-1 relative"
+                class="hidden md:block h-12 w-12 bg-white border border-accent rounded-full p-1 relative"
               >
                 <span
                   class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -113,7 +115,7 @@
                 </span>
               </div>
               <div
-                class="rounded-full h-12 w-12 bg-white border border-accent relative"
+                class="hidden md:block rounded-full h-12 w-12 bg-white border border-accent relative"
               >
                 <span
                   class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -135,7 +137,7 @@
                 </span>
               </div>
               <button
-                class="flex items-center bg-primary text-white font-bold py-2 px-6 rounded-3xl"
+                class="hidden lg:flex items-center bg-primary text-white font-bold py-2 px-6 rounded-3xl"
               >
                 <span class="text-xl font-bold text-black">Book Consult</span>
                 <span
@@ -158,7 +160,11 @@
                 </span>
               </button>
               <div class="dropdown">
-                <div tabindex="0" role="button" class="lg:hidden">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="lg:hidden p-2 w-12 h-12 bg-white rounded-full flex justify-around items-center"
+                >
                   <i class="fa-solid fa-bars"></i>
                 </div>
                 <ul
@@ -176,13 +182,15 @@
           </div>
         </div>
       </nav>
+
+      <!-- HERO IMAGE START HERE -->
       <div class="max-w-[50%] mx-auto mt-16 mb-3">
         <img class="w-full" src="./images/banner.png" alt="hero Image" />
       </div>
       <h1 class="font-bold text-5xl text-center my-5">
         A barn house of this design has a <br />striking appearance
       </h1>
-      <p class="text-center max-w-3xl mx-auto my-8">
+      <p class="text-center lg:max-w-3xl mx-auto my-8 w-full px-4 lg:px-0">
         The barn house captivates with its blend of rustic charm and modern
         sophistication, featuring weathered wood, sleek metal accents, and large
         windows that flood the space with natural light.
@@ -215,17 +223,19 @@
     </header>
 
     <!-- THOUGHT FULL SECTION -->
-    <main class="container mx-auto">
-      <section class="bg-tertiary pt-28 pb-16 relative">
+    <main class="container mx-auto p-5 lg:p-0">
+      <section class="bg-tertiary lg:pt-28 lg:pb-16 relative pt-8 pb-8">
         <img
           src="./images/Vector.png"
           alt=""
           class="absolute top-12 -left-16 hidden md:block"
         />
-        <div class="flex justify-between space-x-10">
-          <div class="w-1/2">
+        <div
+          class="flex-col px-5 lg:px-0 lg:flex-row flex justify-between lg:space-x-10"
+        >
+          <div class="w-full text-center lg:w-1/2">
             <div
-              class="flex items-center justify-center bg-white max-w-[160px] rounded-2xl text-black"
+              class="font-semibold text-md mx-auto lg:mx-0 flex items-center justify-center bg-white max-w-[160px] rounded-2xl text-black"
             >
               <span class="w-6 h-8 flex items-center justify-center mr-2">
                 <svg
@@ -246,48 +256,54 @@
               About Us
             </div>
 
-            <h2 class="text-2xl font-bold my-5">
+            <h2 class="text-3xl font-extrabold my-5">
               We design thoughtful,<br />
               liveable spaces
             </h2>
-            <p class="my-4">
+            <p class="mt-4 mb-6 lg:my-4">
               The barn house captivates with its blend of rustic charm and
               <br />modern sophistication, featuring weathered wood, sleek metal
               accents.
             </p>
-            <div class="card lg:card-side mb-1 bg-white py-2 px-4 mb-7">
+            <div
+              class="card card-side mb-1 bg-white py-2 px-4 mb-7 mt-3 lg:mt-0"
+            >
               <figure>
                 <img src="./images/commercial.png" alt="" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Commercial</h2>
-                <p>
+                <p class="text-left">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
               </div>
             </div>
-            <div class="card lg:card-side bg-white py-2 px-4">
+            <div class="card card-side bg-white py-2 px-4">
               <figure>
                 <img src="./images/residential.png" alt="" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Residential</h2>
-                <p>
+                <p class="text-left">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
               </div>
             </div>
           </div>
-          <div class="w-1/2">
-            <img src="./images/Rectangle.png" alt="" class="h-full" />
+          <div class="w-full ml:0 mt-5 lg:w-1/2">
+            <img
+              src="./images/Rectangle.png"
+              alt=""
+              class="h-full w-full lg:w-auto"
+            />
           </div>
         </div>
 
         <!-- statistics -->
         <div
-          class="flex w-full justify-between mt-16 bg-white py-16 px-10 rounded-lg"
+          class="flex-col space-y-10 lg:space-y-0 lg:flex-row flex w-full justify-between mt-16 bg-white py-16 px-10 rounded-lg"
         >
           <div class="flex flex-col items-center text-center">
             <div>
@@ -410,8 +426,12 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
 
-          <div class="flex justify-between mt-10 space-x-4">
-            <div class="flex flex-col w-1/4 p-6 bg-[#E7C1D3] rounded-lg">
+          <div
+            class="flex-col lg:flex-row flex justify-between mt-10 lg:space-x-4 space-y-4 lg:space-y-0"
+          >
+            <div
+              class="flex flex-col w-full lg:w-1/4 p-6 bg-[#E7C1D3] rounded-lg"
+            >
               <div>
                 <img src="./images/concept.png" alt="" />
                 <h3 class="text-lg my-2 font-bold">Concept</h3>
@@ -421,7 +441,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col w-1/4 p-6 bg-[#EFDA6E] rounded-lg">
+            <div
+              class="flex flex-col w-full lg:w-1/4 p-6 bg-[#EFDA6E] rounded-lg"
+            >
               <div>
                 <img src="./images/flow-chart.png" alt="" />
                 <h3 class="text-lg my-2 font-bold">Design Process</h3>
@@ -431,7 +453,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col w-1/4 p-6 bg-[#A4DAC3] rounded-lg">
+            <div
+              class="flex flex-col w-full lg:w-1/4 p-6 bg-[#A4DAC3] rounded-lg"
+            >
               <div>
                 <img src="./images/vision.png" alt="" />
                 <h3 class="text-lg my-2 font-bold">Supervision</h3>
@@ -441,7 +465,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col w-1/4 p-6 bg-[#77AAEA] rounded-lg">
+            <div
+              class="flex flex-col w-full lg:w-1/4 p-6 bg-[#77AAEA] rounded-lg"
+            >
               <div>
                 <img src="./images/budget-planning.png" alt="" />
                 <h3 class="text-lg my-2 font-bold">Budget Planning</h3>
@@ -609,10 +635,10 @@
 
         <div>
           <div
-            class="flex w-full justify-between mt-20 py-3 px-10 space-x-[24px]"
+            class="flex-col lg:flex-row flex w-full justify-between mt-20 py-3 px-10 lg:space-x-6 space-y-6 lg:space-y-0"
           >
             <div
-              class="flex flex-col w-1/3 p-6 border border-accent rounded-lg bg-white"
+              class="flex flex-col w-full lg:w-1/3 p-6 border border-accent rounded-lg bg-white"
             >
               <img src="./images/article1.png" alt="" />
               <div class="flex space-x-10 mt-5">
@@ -671,7 +697,7 @@
               </button>
             </div>
             <div
-              class="flex flex-col w-1/3 p-6 border border-accent rounded-lg bg-white"
+              class="flex flex-col w-full lg:w-1/3 p-6 border border-accent rounded-lg bg-white"
             >
               <img src="./images/article2.png" alt="" />
               <div class="flex space-x-10 mt-5">
@@ -729,9 +755,8 @@
                 </span>
               </button>
             </div>
-
             <div
-              class="flex flex-col w-1/3 p-6 border border-accent rounded-lg bg-white"
+              class="flex flex-col w-full lg:w-1/3 p-6 border border-accent rounded-lg bg-white"
             >
               <img src="./images/article3.png" alt="" />
               <div class="flex space-x-10 mt-5">
@@ -794,7 +819,7 @@
       </section>
 
       <!-- Additional Section -->
-      <section class="bg-white py-28">
+      <section class="bg-white lg:py-28 py-14">
         <div>
           <div class="pl-14 mb-10">
             <h1 class="font-bold text-5xl mb-1">How It Works</h1>
@@ -802,9 +827,11 @@
               Find a Perfect <span class="text-primary">Developer</span>
             </h3>
           </div>
-          <div class="flex justify-between space-x-4 mt-12">
-            <div class="px-6 border-r-2">
-              <img src="./images/ad1.png" alt="" />
+          <div
+            class="flex-col lg:flex-row flex justify-between space-y-4 lg:space-y-0"
+          >
+            <div class="px-6 lg:border-r-2 border-r-0 text-center lg:text-left">
+              <img src="./images/ad1.png" alt="home pic" class="inline-block" />
               <h1 class="text-black text-lg font-bold my-2">
                 Find A Developer
               </h1>
@@ -813,8 +840,8 @@
                 to work on it now.
               </p>
             </div>
-            <div class="px-6 border-r-2">
-              <img src="./images/add2.png" alt="" />
+            <div class="px-6 lg:border-r-2 border-r-0 text-center lg:text-left">
+              <img src="./images/add2.png" alt="" class="inline-block" />
               <h1 class="text-black text-lg font-bold my-2">
                 Meet with Developer
               </h1>
@@ -822,15 +849,15 @@
                 You should go to Developer to discuss with your plan.
               </p>
             </div>
-            <div class="px-6 border-r-2">
-              <img src="./images/add3.png" alt="" />
+            <div class="px-6 lg:border-r-2 border-r-0 text-center lg:text-left">
+              <img src="./images/add3.png" alt="" class="inline-block" />
               <h1 class="text-black text-lg font-bold my-2">Documents</h1>
               <p class="text-gray-400">
                 You will find your all related documents are ready to start.
               </p>
             </div>
-            <div class="px-6">
-              <img src="./images/add4.png" alt="" />
+            <div class="px-6 text-center lg:text-left">
+              <img src="./images/add4.png" alt="" class="inline-block" />
               <h1 class="text-black text-lg font-bold my-2">Take the keys</h1>
               <p class="text-gray-400">
                 Finally you will got your dream home. Now Enjoy the beauty of
@@ -842,103 +869,98 @@
       </section>
 
       <!-- NEXT PROJECT -->
-      <section class="bg-team bg-cover bg-repeat py-24">
-        <div class="mx-auto">
-          <div class="max-w-[970px] mx-auto">
-            <div class="flex justify-center">
-              <div
-                class="inline-flex items-center justify-center rounded-[28px] py-2 px-5 mt-16 bg-rgb"
+      <section class="bg-team bg-cover bg-repeat lg:py-20 px-6 lg:px-0 py-3">
+        <div class="max-w-[970px] mx-auto">
+          <div class="flex justify-center">
+            <div
+              class="inline-flex items-center justify-center rounded-[28px] py-2 px-5 mt-16 bg-rgb"
+            >
+              <span
+                class="min-w-max h-8 flex items-center justify-center mr-2 rounded-lg"
               >
+                <svg
+                  class="w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </span>
+              Let’s Connect
+            </div>
+          </div>
+          <h1 class="font-bold text-5xl text-center my-8">
+            Let’s Discuss Next Project
+          </h1>
+          <p class="text-center max-w-4xl mx-auto mb-3">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+
+          <div>
+            <form
+              action=""
+              class="grid grid-cols-1 lg:grid-cols-2 lg:space-x-4 space-y-4"
+            >
+              <input
+                class="px-4 py-3 border border-accent rounded-[48px] col-span-2 lg:col-span-1 mt-4 lg:ml-4 ml-0"
+                type="text"
+                placeholder="First Name*"
+                required
+              />
+              <input
+                class="px-4 py-3 border border-accent rounded-[48px] col-span-2 lg:col-span-1"
+                type="text"
+                placeholder="Last Name*"
+                required
+              />
+              <input
+                class="px-4 py-3 border border-accent rounded-[48px] col-span-2 lg:col-span-1"
+                type="text"
+                placeholder="Phone Number*"
+                required
+              />
+              <input
+                class="px-4 py-3 border border-accent rounded-[48px] col-span-2 lg:col-span-1"
+                type="text"
+                placeholder="Email Address*"
+                required
+              />
+              <textarea
+                class="col-span-2 block px-4 py-2 border border-accent rounded-lg col-span-2 min-h-[200px] text-[#A0A0A0]"
+                placeholder="Write your Message Here"
+              ></textarea>
+              <button
+                class="flex items-center bg-primary text-white font-bold py-2 px-6 rounded-3xl col-span-2 justify-center"
+              >
+                <span class="text-xl font-bold text-black">Send Mail</span>
                 <span
-                  class="min-w-max h-8 flex items-center justify-center mr-2"
+                  class="bg-black w-8 h-8 rounded-full flex items-center justify-center ml-2"
                 >
                   <svg
-                    class="w-6"
+                    class="w-4 h-4 text-white"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth="{1.5}"
+                    stroke-width="1.5"
                     stroke="currentColor"
-                    className="size-6"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    ></path>
                   </svg>
                 </span>
-                Let’s Connect
-              </div>
-            </div>
-            <h1 class="font-bold text-5xl text-center my-8">
-              Let’s Discuss Next Project
-            </h1>
-            <p class="text-center max-w-4xl mx-auto mb-3">
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleek metal
-              accents.
-            </p>
-
-            <div>
-              <form action="" class="grid grid-cols-2 gap-4">
-                <input
-                  class="px-4 py-3 border border-accent rounded-[48px]"
-                  type="text"
-                  placeholder="First Name*"
-                  required
-                />
-                <input
-                  class="px-4 py-3 border border-accent rounded-[48px]"
-                  type="text"
-                  placeholder="Last Name*"
-                  required
-                />
-                <input
-                  class="px-4 py-3 border border-accent rounded-[48px]"
-                  type="text"
-                  placeholder="Phone Number*"
-                  required
-                />
-                <input
-                  class="px-4 py-3 border border-accent rounded-[48px]"
-                  type="text"
-                  placeholder="Email Number*"
-                  required
-                />
-
-                <textarea
-                  class="px-4 py-2 border border-accent rounded-lg col-span-2 min-h-[200px] text-[#A0A0A0]"
-                  name=""
-                  id=""
-                >
-Write your Message Here</textarea
-                >
-                <button
-                  class="flex items-center bg-primary text-white font-bold py-2 px-6 rounded-3xl col-span-2 justify-center"
-                >
-                  <span class="text-xl font-bold text-black">Send Mail</span>
-                  <span
-                    class="bg-black w-8 h-8 rounded-full flex items-center justify-center ml-2"
-                  >
-                    <svg
-                      class="w-4 h-4 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                      ></path>
-                    </svg>
-                  </span>
-                </button>
-              </form>
-            </div>
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -976,7 +998,7 @@ Write your Message Here</textarea
         </p>
 
         <ul
-          class="w-3/5 mx-auto flex justify-around text-[#E9E9E9] font-bold mt-6"
+          class="space-y-8 text-[#E9E9E9] lg:text-left lg:space-y-0 text-center w-3/5 mx-auto flex-col lg:flex-row flex justify-around font-bold mt-6"
         >
           <li><a>Home</a></li>
           <li><a>Services</a></li>
